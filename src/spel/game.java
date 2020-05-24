@@ -1,9 +1,11 @@
 package spel;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.*;
+
+import static javax.swing.JList.*;
 
 public class game {
     private JPanel panel1;
@@ -31,17 +33,34 @@ public class game {
         }
     }
 
+    private void KollaVinnare() {
+        if (button1.getText()==("X") && button2.getText() == ("X") && button3.getText() == ("X")){
+            JOptionPane.showMessageDialog(null, "boii");
+            Nollstall();
+        }
+    }
+
+    private void Nollstall() {
+        button1.setText(null);
+        button2.setText(null);
+        button3.setText(null);
+        button4.setText(null);
+        button5.setText(null);
+        button6.setText(null);
+        button7.setText(null);
+        button8.setText(null);
+        button9.setText(null);
+    }
+
 
     public game() {
-        list1.setPreferredSize(new Dimension(10, 10));
-
-
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 button1.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         button2.addActionListener(new ActionListener() {
@@ -50,6 +69,7 @@ public class game {
                 button2.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
 
         });
@@ -59,6 +79,7 @@ public class game {
                 button3.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         button4.addActionListener(new ActionListener() {
@@ -67,6 +88,7 @@ public class game {
                 button4.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         button5.addActionListener(new ActionListener() {
@@ -75,6 +97,7 @@ public class game {
                 button5.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         button6.addActionListener(new ActionListener() {
@@ -83,6 +106,7 @@ public class game {
                 button6.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         button7.addActionListener(new ActionListener() {
@@ -99,6 +123,7 @@ public class game {
                 button8.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         button9.addActionListener(new ActionListener() {
@@ -107,22 +132,20 @@ public class game {
                 button9.setText(startaspel);
                 startaspel.equalsIgnoreCase(startaspel);
                 valjspelare();
+                KollaVinnare();
             }
         });
         restart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                 button1.setText(null);
-                 button2.setText(null);
-                 button3.setText(null);
-                 button4.setText(null);
-                 button5.setText(null);
-                 button6.setText(null);
-                 button7.setText(null);
-                 button8.setText(null);
-                 button9.setText(null);
+                Nollstall();
             }
         });
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        array.add(1);
+
+
+
     }
 
     public static void main(String[] args) {
