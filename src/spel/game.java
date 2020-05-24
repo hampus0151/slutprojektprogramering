@@ -17,9 +17,10 @@ public class game {
     private JButton button8;
     private JButton button9;
     private JButton restart;
+    private JList list1;
 
     private String startaspel = "X";
-
+    
     private void highScore() {
     }
     private void valjspelare() {
@@ -32,6 +33,9 @@ public class game {
 
 
     public game() {
+        list1.setPreferredSize(new Dimension(10, 10));
+
+
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
