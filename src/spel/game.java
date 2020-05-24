@@ -3,6 +3,7 @@ package spel;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.*;
 import java.util.*;
 
 import static javax.swing.JList.*;
@@ -20,11 +21,39 @@ public class game {
     private JButton button9;
     private JButton restart;
     private JList list1;
+    private String namn;
+
+    private static String host = "jdbc:mysql://localhost:3306/game";
+
+    private static String uname = "username";
+    private static String upasswd = "password";
 
     private String startaspel = "X";
-    
-    private void highScore() {
+
+    public static void main(String[] args) {
+
+        Connection con = null;
+        try {
+            con = DriverManager.getConnection(host, uname, upasswd);
+            Statement stmt = con.createStatement();
+            ResultSet myRes = stmt.executeQuery("SELECT * FROM `highscore`; ");
+            while (myRes.next()){
+                System.out.println(myRes.getString("namn")+ myRes.getString("score"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+
+        JFrame frame = new JFrame("treirad");
+        frame.setContentPane(new game().panel1);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(1200,600);
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
     }
+
     private void valjspelare() {
         if (startaspel.equalsIgnoreCase("X")) {
             startaspel = "O";
@@ -35,9 +64,35 @@ public class game {
 
     private void KollaVinnare() {
         if (button1.getText()==("X") && button2.getText() == ("X") && button3.getText() == ("X")){
-            JOptionPane.showMessageDialog(null, "boii");
+            Presenteravinnare();
             Nollstall();
         }
+        else if (button1.getText()==("O") && button2.getText() == ("O") && button3.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button4.getText()==("X") && button5.getText() == ("X") && button6.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button4.getText()==("O") && button5.getText() == ("O") && button6.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button7.getText()==("X") && button8.getText() == ("X") && button9.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button7.getText()==("O") && button8.getText() == ("O") && button9.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+
+
+    }
+
+    private void Presenteravinnare() {
+        JOptionPane.showMessageDialog(null, namn + " vann");
     }
 
     private void Nollstall() {
@@ -54,6 +109,8 @@ public class game {
 
 
     public game() {
+        namn = JOptionPane.showInputDialog(null, "skriv ditt namn");
+
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -146,15 +203,6 @@ public class game {
 
 
 
-    }
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("treirad");
-        frame.setContentPane(new game().panel1);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1200,600);
-        frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
     }
 
     private void createUIComponents() {
