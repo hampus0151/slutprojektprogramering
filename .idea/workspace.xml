@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="698897d2-4379-41af-9089-124387795d7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/spel/Spelare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spel/game.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/spel/game.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spel/game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spel/game.java" afterDir="false" />
-    </list>
+    <list default="true" id="698897d2-4379-41af-9089-124387795d7f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +14,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/spel/game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="-305">
               <caret line="138" column="44" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,7 +155,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="321" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590425658022" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590425963709" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -234,7 +218,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3534636" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3534636" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,7 +298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spel/game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="-305">
           <caret line="138" column="44" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
