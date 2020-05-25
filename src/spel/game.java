@@ -32,20 +32,6 @@ public class game {
 
     public static void main(String[] args) {
 
-        Connection con = null;
-        try {
-            con = DriverManager.getConnection(host, uname, upasswd);
-            Statement stmt = con.createStatement();
-            ResultSet myRes = stmt.executeQuery("SELECT * FROM `highscore`; ");
-            while (myRes.next()){
-                System.out.println(myRes.getString("namn")+ myRes.getString("score"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-
         JFrame frame = new JFrame("treirad");
         frame.setContentPane(new game().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -62,7 +48,9 @@ public class game {
         }
     }
 
+    //inte jättefina spelregler men de fungerar
     private void KollaVinnare() {
+        //horisontellt
         if (button1.getText()==("X") && button2.getText() == ("X") && button3.getText() == ("X")){
             Presenteravinnare();
             Nollstall();
@@ -87,12 +75,71 @@ public class game {
             Presenteravinnare();
             Nollstall();
         }
-
-
+        //snett
+        else if (button1.getText()==("O") && button5.getText() == ("O") && button9.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button1.getText()==("X") && button5.getText() == ("X") && button9.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button3.getText()==("X") && button5.getText() == ("X") && button7.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button3.getText()==("O") && button5.getText() == ("O") && button7.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        //vertikalt
+        else if (button1.getText()==("X") && button4.getText() == ("X") && button7.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button1.getText()==("O") && button4.getText() == ("O") && button7.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button2.getText()==("X") && button5.getText() == ("X") && button8.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button2.getText()==("O") && button5.getText() == ("O") && button8.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button3.getText()==("X") && button6.getText() == ("X") && button9.getText() == ("X")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        else if (button3.getText()==("O") && button6.getText() == ("O") && button9.getText() == ("O")){
+            Presenteravinnare();
+            Nollstall();
+        }
+        inithighscore();
     }
 
     private void Presenteravinnare() {
+        saveHighscore();
         JOptionPane.showMessageDialog(null, namn + " vann");
+
+    }
+
+    private void saveHighscore() {
+        Connection con = null;
+        try {
+            con = DriverManager.getConnection(host, uname, upasswd);
+            Statement stmt = con.createStatement();
+            PreparedStatement pstmt = con.prepareStatement("INSERT INTO `highscore` (id,namn,score, datum ) VALUES (id,?,?, now())");
+
+            pstmt.setString(1, namn);
+            pstmt.setInt(2, 12);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void Nollstall() {
@@ -198,13 +245,31 @@ public class game {
                 Nollstall();
             }
         });
-        ArrayList<Integer> array = new ArrayList<Integer>();
-        array.add(1);
-
-
-
+        inithighscore();
     }
 
     private void createUIComponents() {
     }
+    private void inithighscore(){
+        Connection con = null;
+        try {
+            con = DriverManager.getConnection(host, uname, upasswd);
+            Statement stmt = con.createStatement();
+            ResultSet myRes = stmt.executeQuery("SELECT * FROM `highscore` ORDER BY SCORE; ");
+
+            ArrayList<String> resultVisning = new ArrayList<String>();
+            resultVisning.add("HIGHSCORES");
+            resultVisning.add("__________");
+            while (myRes.next()){
+                resultVisning.add(myRes.getString("score") + " "
+                                + myRes.getString("namn") + " "
+                        /*+ myRes.getString("datum")*/);
+            }
+
+            list1.setListData(resultVisning.toArray());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
+

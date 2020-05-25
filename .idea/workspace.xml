@@ -14,7 +14,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slutprojektpogramering.iml" beforeDir="false" afterPath="$PROJECT_DIR$/slutprojektpogramering.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spel/game.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/spel/game.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spel/game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spel/game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,15 +29,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/spel/game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-558">
-              <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
+            <state relative-caret-position="-396">
+              <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2706#2707#0" expanded="true" />
-                <element signature="e#2773#2774#0" expanded="true" />
-                <element signature="e#6230#6231#0" expanded="true" />
-                <element signature="e#6273#6274#0" expanded="true" />
-                <element signature="e#6335#6344#0" expanded="true" />
+                <element signature="method#main#0;class#game#0" />
+                <element signature="method#valjspelare#0;class#game#0" />
+                <element signature="method#KollaVinnare#0;class#game#0" />
+                <element signature="e#8305#8306#0" expanded="true" />
+                <element signature="e#8348#8349#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,6 +73,12 @@
         <option value="$PROJECT_DIR$/src/spel/game.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="558" />
@@ -117,8 +123,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,7 +133,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="321" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590332270863" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590342733693" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -181,7 +187,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1319838" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13441296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -190,29 +196,26 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6358792" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.64298403" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32955465" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/spel/game.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/Driver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -242,18 +245,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spel/game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
+        <state relative-caret-position="-396">
+          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#6230#6231#0" expanded="true" />
-            <element signature="e#6273#6274#0" expanded="true" />
-            <element signature="e#6335#6344#0" expanded="true" />
+            <element signature="method#main#0;class#game#0" />
+            <element signature="method#valjspelare#0;class#game#0" />
+            <element signature="method#KollaVinnare#0;class#game#0" />
+            <element signature="e#8305#8306#0" expanded="true" />
+            <element signature="e#8348#8349#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spel/game.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
