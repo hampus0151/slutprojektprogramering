@@ -2,10 +2,8 @@
 
 1. Ska skapa ett 3 i rad med en databas.  
 beskrivning:   
-1 spelare mot datorn  
-datorn randomisar drag  
-spelarens namn, hur lång tid matchen tog,   
-om man vann eller förlorade, antal drag,    
+1 spelare mot spelare 2 
+spelarens namn, hur många drag,    
 datum när man spelade, sparas i databas  
 
 
