@@ -6,8 +6,6 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 import java.util.*;
 
-import static javax.swing.JList.*;
-
 public class game {
     private JPanel panel1;
     private JButton button1;
@@ -21,8 +19,10 @@ public class game {
     private JButton button9;
     private JButton restart;
     private JList list1;
-    private String namn;
+    private JButton rensaHighscoresButton;
     private Integer scoreCount = 1;
+    //Använder egen klass spelare
+    private Spelare spelare;
 
     private static String host = "jdbc:mysql://localhost:3306/game";
 
@@ -124,7 +124,7 @@ public class game {
 
     private void Presenteravinnare() {
         saveHighscore();
-        JOptionPane.showMessageDialog(null, namn + " vann. Du fick score: " + scoreCount);
+        JOptionPane.showMessageDialog(null, spelare.namne + " vann. Du fick score: " + scoreCount);
         scoreCount = 1;
 
     }
@@ -136,7 +136,7 @@ public class game {
             Statement stmt = con.createStatement();
             PreparedStatement pstmt = con.prepareStatement("INSERT INTO `highscore` (id,namn,score, datum ) VALUES (id,?,?, now())");
 
-            pstmt.setString(1, namn);
+            pstmt.setString(1, spelare.namne);
             pstmt.setInt(2, scoreCount);
             pstmt.executeUpdate();
         } catch (SQLException e) {
@@ -159,7 +159,8 @@ public class game {
 
 
     public game() {
-        namn = JOptionPane.showInputDialog(null, "skriv ditt namn");
+        spelare = new Spelare();
+        spelare.namne = JOptionPane.showInputDialog(null, "skriv ditt namn");
 
         button1.addActionListener(new ActionListener() {
             @Override
@@ -249,6 +250,24 @@ public class game {
             }
         });
         inithighscore();
+
+
+        rensaHighscoresButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Connection con = null;
+                try {
+                    con = DriverManager.getConnection(host, uname, upasswd);
+                    Statement stmt = con.createStatement();
+                    PreparedStatement pstmt = con.prepareStatement("DELETE FROM `highscore`");
+
+                    pstmt.executeUpdate();
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+                inithighscore();
+            }
+        });
     }
 
     private void createUIComponents() {
@@ -258,7 +277,7 @@ public class game {
         try {
             con = DriverManager.getConnection(host, uname, upasswd);
             Statement stmt = con.createStatement();
-            ResultSet myRes = stmt.executeQuery("SELECT * FROM `highscore` ORDER BY SCORE; ");
+            ResultSet myRes = stmt.executeQuery("SELECT * FROM `highscore` ORDER BY SCORE LIMIT 3; ");
 
             ArrayList<String> resultVisning = new ArrayList<String>();
             resultVisning.add("HIGHSCORES");
