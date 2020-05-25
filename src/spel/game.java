@@ -22,13 +22,14 @@ public class game {
     private JButton restart;
     private JList list1;
     private String namn;
+    private Integer scoreCount = 1;
 
     private static String host = "jdbc:mysql://localhost:3306/game";
 
     private static String uname = "username";
     private static String upasswd = "password";
 
-    private String startaspel = "X";
+    private String spelpjas = "X";
 
     public static void main(String[] args) {
 
@@ -41,10 +42,11 @@ public class game {
     }
 
     private void valjspelare() {
-        if (startaspel.equalsIgnoreCase("X")) {
-            startaspel = "O";
+        if (spelpjas.equalsIgnoreCase("X")) {
+            spelpjas = "O";
         } else {
-            startaspel = "X";
+            spelpjas = "X";
+            scoreCount++;
         }
     }
 
@@ -122,7 +124,8 @@ public class game {
 
     private void Presenteravinnare() {
         saveHighscore();
-        JOptionPane.showMessageDialog(null, namn + " vann");
+        JOptionPane.showMessageDialog(null, namn + " vann. Du fick score: " + scoreCount);
+        scoreCount = 1;
 
     }
 
@@ -134,7 +137,7 @@ public class game {
             PreparedStatement pstmt = con.prepareStatement("INSERT INTO `highscore` (id,namn,score, datum ) VALUES (id,?,?, now())");
 
             pstmt.setString(1, namn);
-            pstmt.setInt(2, 12);
+            pstmt.setInt(2, scoreCount);
             pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -161,8 +164,8 @@ public class game {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button1.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button1.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -170,8 +173,8 @@ public class game {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button2.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button2.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -180,8 +183,8 @@ public class game {
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button3.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button3.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -189,8 +192,8 @@ public class game {
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button4.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button4.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -198,8 +201,8 @@ public class game {
         button5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button5.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button5.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -207,8 +210,8 @@ public class game {
         button6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button6.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button6.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -216,16 +219,16 @@ public class game {
         button7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button7.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button7.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
             }
         });
         button8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button8.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button8.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }
@@ -233,8 +236,8 @@ public class game {
         button9.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                button9.setText(startaspel);
-                startaspel.equalsIgnoreCase(startaspel);
+                button9.setText(spelpjas);
+                spelpjas.equalsIgnoreCase(spelpjas);
                 valjspelare();
                 KollaVinnare();
             }

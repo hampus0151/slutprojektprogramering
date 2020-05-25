@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="698897d2-4379-41af-9089-124387795d7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/slutprojektpogramering/spel/game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spel/game.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/spel/game.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spel/game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spel/game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,12 +16,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/spel/game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+            <state relative-caret-position="323">
+              <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#game#0" />
-                <element signature="method#valjspelare#0;class#game#0" />
                 <element signature="method#KollaVinnare#0;class#game#0" />
                 <element signature="e#8305#8306#0" expanded="true" />
                 <element signature="e#8348#8349#0" expanded="true" />
@@ -92,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -133,7 +118,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="321" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590342733693" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590421319937" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -187,7 +172,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13441296" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1368421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -245,12 +230,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spel/game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+        <state relative-caret-position="323">
+          <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#game#0" />
-            <element signature="method#valjspelare#0;class#game#0" />
             <element signature="method#KollaVinnare#0;class#game#0" />
             <element signature="e#8305#8306#0" expanded="true" />
             <element signature="e#8348#8349#0" expanded="true" />
